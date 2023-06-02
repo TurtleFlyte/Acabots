@@ -1,0 +1,213 @@
+:root {
+  --color-primary: rgb(30 96 172);
+  --color-primary-light: rgb(37, 132, 206);
+  --color-secondary: rgb(240 253 255);
+  --color-secondary-dark: rgb(139 201 201);
+  --color-secondary-black: rgb(44 42 52);
+  --font-primary: Heebo;
+  --font-title: Rubik;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  font-size: 14px;
+  height: 80px;
+  padding: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--color-primary);
+  position: sticky;
+}
+
+.content {
+  display: flex;
+  flex-flow: column;
+}
+
+.banner {
+  background-image: url("/imgs/banner2.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 30%;
+  background-color: rgba(117, 117, 117, 0.5);
+  background-blend-mode: multiply;
+  min-height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.frc-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 500px;
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 50px;
+}
+
+.robots {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 400px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+.logo-link {
+  font-size: 0%;
+}
+
+.header-logo {
+  height: 60px;
+}
+
+.nav-buttons {
+  margin-left: 150px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-buttons__button {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+.nav-buttons__button:hover {
+  color: var(--color-secondary-dark);
+}
+
+.info {
+  color: var(--color-secondary);
+}
+.info__name {
+  font-family: var(--font-title), sans-serif;
+  font-size: 60px;
+}
+.info__description {
+  max-width: 700px;
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+.info__button {
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-size: 18px;
+  background-color: none;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 15px;
+  border: 2px solid var(--color-primary);
+  transition: all 0.4s;
+}
+.info__button:hover {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}
+
+.banner-logo {
+  height: 400px;
+}
+
+.frc-img {
+  height: 300px;
+}
+
+.frc-info-text {
+  color: var(--color-primary);
+  padding: 50px;
+}
+.frc-info-text__description {
+  font-weight: 400;
+  font-size: 14px;
+  word-spacing: 110%;
+  max-width: 640px;
+  color: var(--color-primary-light);
+}
+
+.mission-title {
+  font-family: var(--font-title);
+  font-size: 30px;
+  text-align: center;
+}
+
+.mission-statement {
+  font-weight: 400;
+  font-size: 20px;
+  word-spacing: 110%;
+  text-align: center;
+  max-width: 800px;
+}
+
+.robots {
+  background-color: var(--color-secondary-dark);
+}
+
+.robot-card__img {
+  max-height: 300px;
+  transition: all 0.3s;
+}
+.robot-card__img:hover {
+  max-height: 320px;
+}
+.robot-card__img:hover + .hide {
+  display: block;
+}
+.robot-card__name {
+  font-family: var(--font-title);
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: 10px;
+}
+.footer__credit {
+  color: var(--color-secondary);
+  font-weight: 400;
+}/*# sourceMappingURL=main.css.map */

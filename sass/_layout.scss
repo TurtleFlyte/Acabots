@@ -1,0 +1,63 @@
+header {
+    font-size: 14px;
+    height: 80px;
+    padding: 40px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: var(--color-primary);
+
+    position: sticky;
+}
+
+.content {
+    display: flex;
+    flex-flow: column;
+}
+
+.banner {
+    background-image: url('/imgs/banner2.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 30%;
+
+    background-color: rgba(117, 117, 117, 0.5);
+    background-blend-mode: multiply;
+
+    min-height: 600px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+
+.frc-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    min-height: 500px;
+}
+
+.mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    margin-top: 50px;
+}
+
+.robots {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    min-height: 400px;
+}
