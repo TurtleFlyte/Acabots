@@ -56,12 +56,11 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 30%;
-  background-color: rgba(117, 117, 117, 0.5);
-  background-blend-mode: multiply;
-  min-height: 600px;
+  min-height: 800px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-grow: 0;
   flex-wrap: wrap;
 }
 
@@ -89,9 +88,36 @@ header {
   min-height: 400px;
 }
 
+.b2 {
+  background-image: url(../imgs/DSCN0935.JPG);
+  background-position: 50% 70%;
+}
+
+.b3 {
+  background-image: url(../imgs/DSCN0870.JPG);
+  background-position: 50% 60%;
+  background-attachment: fixed;
+  min-height: 400px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
+  height: 100vh;
+}
+
 h2 {
-  font-size: 26px;
+  font-size: 30px;
   margin-bottom: 16px;
+  font-family: var(--font-title);
+}
+
+h1 {
+  font-size: 70px;
+  font-family: var(--font-title);
+  text-align: center;
 }
 
 .logo-link {
@@ -135,16 +161,17 @@ h2 {
   text-decoration: none;
   color: var(--color-secondary);
   font-size: 18px;
-  background-color: none;
+  background-color: var(--color-primary);
   padding: 15px;
   margin: 20px;
-  border-radius: 15px;
-  border: 2px solid var(--color-primary);
+  border-radius: 10px;
+  border: 2px solid var(--color-secondary);
   transition: all 0.4s;
 }
 .info__button:hover {
-  color: var(--color-secondary);
-  background-color: var(--color-primary);
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  font-size: 20px;
 }
 
 .banner-logo {
@@ -164,17 +191,16 @@ h2 {
   font-size: 14px;
   word-spacing: 110%;
   max-width: 640px;
-  color: var(--color-primary-light);
+  color: darkslategray;
 }
 
 .mission-title {
   font-family: var(--font-title);
-  font-size: 30px;
   text-align: center;
 }
 
 .mission-statement {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   word-spacing: 110%;
   text-align: center;
@@ -210,4 +236,54 @@ h2 {
 .footer__credit {
   color: var(--color-secondary);
   font-weight: 400;
+}
+
+.sponsor-level {
+  min-height: 160px;
+  display: flex;
+  margin: 30px;
+  padding: 20px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary);
+}
+.sponsor-level__title {
+  margin-bottom: 30px;
+}
+.sponsor-level__info {
+  font-size: 20px;
+  color: var(--color-primary-light);
+}
+
+.sponsor-contact {
+  min-height: 160px;
+  display: flex;
+  margin: 30px;
+  padding: 20px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+}
+.about-section__img {
+  height: 400px;
+}
+
+.about-section-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column;
+  align-self: flex-start;
+}
+.about-section-info__info {
+  font-weight: 400;
+  color: darkslategray;
 }/*# sourceMappingURL=main.css.map */

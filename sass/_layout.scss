@@ -23,14 +23,16 @@ header {
     background-size: cover;
     background-position: 50% 30%;
 
-    background-color: rgba(117, 117, 117, 0.5);
-    background-blend-mode: multiply;
+    // background-color: rgba(113, 171, 237, 0.713);
+    // background-blend-mode: multiply;
 
-    min-height: 600px;
+    min-height: 800px;
 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    flex-grow: 0;
     
     flex-wrap: wrap;
 }
@@ -60,4 +62,26 @@ header {
     flex-wrap: wrap;
 
     min-height: 400px;
+}
+
+.b2 {
+    background-image: url(../imgs/DSCN0935.JPG);
+    background-position: 50% 70%;
+}
+
+.b3 {
+    background-image: url(../imgs/DSCN0870.JPG);
+    background-position: 50% 60%;
+    background-attachment: fixed;
+
+    min-height: 400px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+
+    height: 100vh;
 }

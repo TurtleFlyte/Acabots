@@ -1,6 +1,14 @@
 h2 {
-    font-size: 26px;
+    font-size: 30px;
     margin-bottom: 16px;
+    font-family: var(--font-title);
+
+}
+
+h1 {
+    font-size: 70px;
+    font-family: var(--font-title);
+    text-align: center;
 }
 
 //////////////////////////////////
@@ -56,16 +64,17 @@ h2 {
         text-decoration: none;
         color: var(--color-secondary);
         font-size: 18px;
-        background-color: none;
+        background-color: var(--color-primary);
         padding: 15px;
         margin: 20px;
-        border-radius: 15px;
-        border: 2px solid var(--color-primary);
+        border-radius: 10px;
+        border: 2px solid var(--color-secondary);
         transition: all .4s;
 
         &:hover {
-            color: var(--color-secondary);
-            background-color: var(--color-primary);
+            color: var(--color-primary);
+            background-color: var(--color-secondary);
+            font-size: 20px;
         }
     }
 }
@@ -95,21 +104,20 @@ h2 {
         font-size: 14px;
         word-spacing: 110%;
         max-width: 640px;
-        color: var(--color-primary-light);
+        color: darkslategray;
     }
 }
 
 //////////////////////////////////
-/// FRC info
+/// Mission
 
 .mission-title {
     font-family: var(--font-title);
-    font-size: 30px;
     text-align: center;
 }
 
 .mission-statement {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 20px;
     word-spacing: 110%;
     text-align: center;
@@ -146,7 +154,7 @@ h2 {
 }
 
 //////////////////////////////////
-/// Robot Showcase
+/// Footer
 
 .footer {
     background-color: var(--color-primary);
@@ -156,5 +164,69 @@ h2 {
     &__credit {
         color: var(--color-secondary);
         font-weight: 400;
+    }
+}
+
+//////////////////////////////////
+/// Sponsor
+
+.sponsor-level {
+    min-height: 160px;
+    display: flex;
+    margin: 30px;
+    padding: 20px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: var(--color-secondary);
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__info {
+        font-size: 20px;
+        color: var(--color-primary-light);
+    }
+}
+
+.sponsor-contact {
+    min-height: 160px;
+    display: flex;
+    margin: 30px;
+    padding: 20px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+//////////////////////////////////
+/// About
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 600px;
+
+    &__img {
+        height: 400px;
+    }
+}
+
+.about-section-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column;
+
+    align-self: flex-start;
+
+    &__info {
+        font-weight: 400;
+        color: darkslategray;
     }
 }
