@@ -6,7 +6,7 @@ h2 {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-family: var(--font-title);
     text-align: center;
 }
@@ -127,10 +127,6 @@ h1 {
 //////////////////////////////////
 /// Robot Showcase
 
-.robots {
-    background-color: var(--color-secondary-dark);
-}
-
 .robot-card {
     &__img {
         max-height: 300px;
@@ -207,8 +203,9 @@ h1 {
 
 .about-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 
     min-height: 600px;
 
@@ -219,14 +216,45 @@ h1 {
 
 .about-section-info {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: flex-start;
     flex-flow: column;
+    min-height: 400px;
+    max-width: 550px;
 
-    align-self: flex-start;
+    &__title {
+        margin-top: -20px;
+    }
 
     &__info {
         font-weight: 400;
+        font-size: 20px;
         color: darkslategray;
+    }
+}
+
+.mentors {
+    &__pictures-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: 500px;
+    }
+
+    &__pictures-text {
+        font-size: 20px;
+    }
+
+    &__picture {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        height: 400px;
+        padding: 50px;
+        padding-bottom: 5px;
     }
 }
