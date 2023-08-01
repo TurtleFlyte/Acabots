@@ -33,7 +33,7 @@ h1 {
     &__button {
         color: var(--color-secondary);
         text-decoration: none;
-        font-size: 18px;
+        font-size: 16px;
         transition: all .2s;
 
         &:hover {
@@ -74,7 +74,7 @@ h1 {
         &:hover {
             color: var(--color-primary);
             background-color: var(--color-secondary);
-            font-size: 20px;
+            // font-size: 20px;
         }
     }
 }
@@ -254,7 +254,7 @@ h1 {
 
     &__img {
         height: 400px;
-        padding: 50px;
+        padding: 40px;
         padding-bottom: 5px;
     }
 }

@@ -28,7 +28,7 @@ body {
   font-weight: 600;
   line-height: 1.6;
   color: var(--color-primary);
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
 
 .hide {
@@ -49,6 +49,7 @@ header {
 .content {
   display: flex;
   flex-flow: column;
+  background-color: var(--color-secondary);
 }
 
 .banner {
@@ -56,7 +57,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 30%;
-  min-height: 800px;
+  min-height: 600px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -147,7 +148,7 @@ h1 {
 .nav-buttons__button {
   color: var(--color-secondary);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   transition: all 0.2s;
 }
 .nav-buttons__button:hover {
@@ -180,7 +181,6 @@ h1 {
 .info__button:hover {
   color: var(--color-primary);
   background-color: var(--color-secondary);
-  font-size: 20px;
 }
 
 .banner-logo {
@@ -316,6 +316,6 @@ h1 {
 }
 .mentors__img {
   height: 400px;
-  padding: 50px;
+  padding: 40px;
   padding-bottom: 5px;
 }/*# sourceMappingURL=main.css.map */
