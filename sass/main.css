@@ -21,6 +21,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -44,25 +45,41 @@ header {
   align-items: center;
   background-color: var(--color-primary);
   position: sticky;
+  box-shadow: 0px 1px 2px rgba(74, 92, 131, 0.512);
 }
 
 .content {
   display: flex;
   flex-flow: column;
+  z-index: 1;
   background-color: var(--color-secondary);
 }
 
 .banner {
-  background-image: url("../imgs/banner2.JPG");
+  background-image: url("../imgs/the squad (6am version).png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 30%;
+  min-height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  z-index: 0;
+}
+
+.banner-info {
+  position: absolute;
+  width: 100%;
   min-height: 600px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-grow: 0;
   flex-wrap: wrap;
+  z-index: 0;
 }
 
 .frc-info {
@@ -71,6 +88,9 @@ header {
   align-items: center;
   flex-wrap: wrap;
   min-height: 500px;
+  width: 100%;
+  background-color: rgb(218, 235, 238);
+  z-index: 1;
 }
 
 .mission {
@@ -78,7 +98,9 @@ header {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  margin-top: 50px;
+  min-height: 300px;
+  z-index: 1;
+  background-color: var(--color-secondary);
 }
 
 .robots {
@@ -86,19 +108,19 @@ header {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 .b2 {
   background-image: url(../imgs/DSCN0935.JPG);
   background-position: 50% 70%;
+  min-height: 600px;
 }
 
 .b3 {
   background-image: url(../imgs/DSCN0870.JPG);
   background-position: 50% 60%;
-  background-attachment: fixed;
-  min-height: 400px;
+  min-height: 600px;
 }
 
 .about {
@@ -119,7 +141,7 @@ header {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 16px;
   font-family: var(--font-title);
 }
@@ -128,6 +150,12 @@ h1 {
   font-size: 60px;
   font-family: var(--font-title);
   text-align: center;
+}
+
+p {
+  font-size: 17px;
+  word-spacing: 50%;
+  letter-spacing: 50%;
 }
 
 .logo-link {
@@ -157,6 +185,7 @@ h1 {
 
 .info {
   color: var(--color-secondary);
+  z-index: 5;
 }
 .info__name {
   font-family: var(--font-title), sans-serif;
@@ -174,8 +203,7 @@ h1 {
   background-color: var(--color-primary);
   padding: 15px;
   margin: 20px;
-  border-radius: 10px;
-  border: 2px solid var(--color-secondary);
+  border-radius: 5px;
   transition: all 0.4s;
 }
 .info__button:hover {
@@ -197,10 +225,8 @@ h1 {
 }
 .frc-info-text__description {
   font-weight: 400;
-  font-size: 14px;
-  word-spacing: 110%;
   max-width: 640px;
-  color: darkslategray;
+  color: rgb(97, 143, 154);
 }
 
 .mission-title {
@@ -211,17 +237,17 @@ h1 {
 .mission-statement {
   font-weight: 600;
   font-size: 20px;
-  word-spacing: 110%;
   text-align: center;
   max-width: 800px;
+  color: var(--color-primary-light);
 }
 
 .robot-card__img {
   max-height: 300px;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .robot-card__img:hover {
-  max-height: 320px;
+  max-height: 310px;
 }
 .robot-card__img:hover + .hide {
   display: block;
@@ -246,11 +272,11 @@ h1 {
 .sponsor-level {
   min-height: 160px;
   display: flex;
-  margin: 30px;
-  padding: 20px;
+  padding: 50px;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
   background-color: var(--color-secondary);
 }
 .sponsor-level__title {
@@ -277,6 +303,8 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
   min-height: 600px;
+  z-index: 1;
+  background-color: var(--color-secondary);
 }
 .about-section__img {
   height: 400px;
@@ -318,4 +346,18 @@ h1 {
   height: 400px;
   padding: 40px;
   padding-bottom: 5px;
+}
+
+.image-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+  min-height: 600px;
+}
+.image-bar__img {
+  width: 100%;
+  aspect-ratio: 1.2/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
