@@ -248,6 +248,8 @@ a {
 }
 
 .mentors {
+    background-color: var(--color-secondary);
+
     &__pictures-container {
         display: flex;
         justify-content: space-evenly;
@@ -283,6 +285,8 @@ a {
     flex-grow: 1;
 
     min-height: 600px;
+
+    background-color: var(--color-secondary);
 
     &__img {
         width: 100%;

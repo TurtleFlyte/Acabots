@@ -20,7 +20,7 @@ header {
 
     z-index: 1;
 
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
 }
 
 .banner {
@@ -99,6 +99,8 @@ header {
     flex-wrap: wrap;
 
     min-height: 500px;
+
+    background-color: var(--color-secondary);
 }
 
 .b2 {
@@ -122,6 +124,8 @@ header {
     flex-flow: column;
 
     height: 100vh;
+
+    background-color: var(--color-secondary);
 }
 
 .divider {
