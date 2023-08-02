@@ -158,6 +158,10 @@ p {
   letter-spacing: 50%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo-link {
   font-size: 0%;
 }
