@@ -77,10 +77,28 @@ a {
         color: var(--color-secondary);
         font-size: 18px;
         background-color: var(--color-primary);
-        padding: 15px;
+        padding: 17px;
         margin: 20px;
         border-radius: 5px;
         // border: 2px solid var(--color-secondary);
+        transition: all .4s;
+
+        &:hover {
+            color: var(--color-primary);
+            background-color: var(--color-secondary);
+            // font-size: 20px;
+        }
+    }
+
+    &__button-inverted {
+        text-decoration: none;
+        color: var(--color-secondary);
+        font-size: 18px;
+        background-color: rgb(0, 0, 0, 0);
+        padding: 15px;
+        margin: 20px;
+        border-radius: 5px;
+        border: 2px solid var(--color-secondary);
         transition: all .4s;
 
         &:hover {
@@ -209,6 +227,10 @@ a {
     align-items: center;
 }
 
+.sponsor-packet {
+    min-height: 900px;
+}
+
 //////////////////////////////////
 /// About
 
@@ -293,4 +315,12 @@ a {
         aspect-ratio: 1.2 / 1;
         object-fit: cover;
     }
+}
+
+//////////////////////////////////
+/// Styles
+
+.background-tint {
+    background-color: rgba(10, 18, 40, 0.295);
+    background-blend-mode: multiply;
 }
