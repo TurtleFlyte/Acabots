@@ -292,34 +292,33 @@ a {
 .sponsor-level {
   min-height: 160px;
   display: flex;
-  padding: 50px;
+  padding: 5%;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   z-index: 1;
   background-color: var(--color-secondary);
 }
-.sponsor-level__title {
-  margin-bottom: 30px;
-}
 .sponsor-level__info {
   font-size: 20px;
   color: var(--color-primary-light);
 }
 
-.sponsor-contact {
-  min-height: 160px;
-  display: flex;
-  margin: 30px;
-  padding: 20px;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .sponsor-packet {
-  padding: 140px;
-  min-height: 129vw;
+  min-height: 64.5vw;
+}
+@media screen and (max-width: 700px) {
+  .sponsor-packet {
+    padding-left: 10%;
+    padding-right: 10%;
+    min-height: 129vw;
+  }
+}
+@media screen and (min-width: 700px) {
+  .sponsor-packet {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
 }
 
 .about-section {

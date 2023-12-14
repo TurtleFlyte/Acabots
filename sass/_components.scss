@@ -199,7 +199,7 @@ a {
     min-height: 160px;
     display: flex;
     // margin: 30px;
-    padding: 50px;
+    padding: 5%;
     flex-flow: column;
     justify-content: center;
     align-items: center;
@@ -207,29 +207,24 @@ a {
     z-index: 1;
     background-color: var(--color-secondary);
 
-    &__title {
-        margin-bottom: 30px;
-    }
-
     &__info {
         font-size: 20px;
         color: var(--color-primary-light);
     }
 }
 
-.sponsor-contact {
-    min-height: 160px;
-    display: flex;
-    margin: 30px;
-    padding: 20px;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .sponsor-packet {
-    padding: 140px;
-    min-height: calc(100vw*1.29);
+    min-height: calc(100vw*1.29*.5);
+
+    @media screen and (max-width: 700px) {
+        padding-left: 10%;
+        padding-right: 10%;
+        min-height: calc(100vw*1.29);
+    }
+    @media screen and (min-width: 700px) {
+        padding-left: 30%;
+        padding-right: 30%;
+    }
 }
 
 //////////////////////////////////
